@@ -4,20 +4,29 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
 section {
-  max-width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 100px;
+  padding: 100px 0;
 }
+
 .grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
-  grid-gap: 60px;
+  grid-gap: 64px;
 }
+
+.gridTwoColumns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.gridThreeColumns {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)),
     url("../images/FreedomHeroTwo.jpeg");
@@ -61,6 +70,37 @@ header a {
   display: inline-block;
 }
 
+main {
+  background-color: white;
+}
+
+main img {
+  max-width: 100%;
+}
+
+main h2 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  opacity: 0.3;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+main h3 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+}
+
+main p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  opacity: 0.7;
+}
+
 footer {
   color: white;
   background-image: linear-gradient(
@@ -70,7 +110,6 @@ footer {
     url("../images/FooterOne.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 80px 0;
 }
 
 footer h3 {
@@ -122,5 +161,18 @@ footer a {
 
   header a {
     font-size: 10px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+
+  section {
+    padding: 30px;
+  }
+
+  main h3 {
+    font-size: 30px;
   }
 }
