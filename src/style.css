@@ -48,6 +48,15 @@ section.secondary {
   padding: 30px;
 }
 
+.cardHeader.grid {
+  grid-gap: 0;
+}
+
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
 .btn {
   display: block;
   color: white;
@@ -110,7 +119,7 @@ main {
 }
 
 main img {
-  max-width: 100%;
+  width: 100%;
   display: block;
 }
 
@@ -226,5 +235,13 @@ footer a {
 
   main h3 {
     font-size: 30px;
+  }
+
+  .cardHeader img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16/9;
   }
 }
